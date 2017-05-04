@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hanafuda</string>
+    <string name="action_settings">Settings</string>
+    <string name="clique_start">Start</string>
+    <string name="score">Score: </string>
+    <string name="turnplayer">Player starts</string>
+    <string name="turncomputer">Computer starts</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_show_winner">ShowWinner</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="winner">Winner</string>
+    <string name="pc">Computer</string>
+    <string name="player">Player</string>
+    <string name="vs">VS</string>
+    <string name="continuar">Continue</string>
+    <string name="cinquenta">50</string>
+    <string name="dez">10</string>
+    <string name="Faixa">Strip</string>
+    <string name="zero">00</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_show_winne">ShowWinne</string>
+    <string name="title_activity_winner">Winner</string>
+    <string name="sair">X</string>
+    <string name="Avacado">Advanced mode</string>
+    <string name="Iniciante">Newbie mode</string>
+    <string name="oponente">Choose opponent</string>
+    <string name="show">View</string>
+    <string name="descart">Discard</string>
+    <string name="combine">Combine</string>
+
+</resources>

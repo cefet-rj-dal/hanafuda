@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.gpca.hanafuda.android"
+    android:versionCode="10"
+    android:versionName="2.0.0" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+    <supports-screens
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:smallScreens="true"
+        android:normalScreens="true" android:anyDensity="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icone"
+        android:label="@string/app_name">
+        <activity
+            android:name="br.gpca.hanafuda.android.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ShowWinner" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+    </application>
+</manifest>
