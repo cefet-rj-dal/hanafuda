@@ -1,5 +1,8 @@
 package br.gpca.hanafuda.kernel;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import br.gpca.hanafuda.kernel.Enums.GameStates;
 
 public class Player {
@@ -85,20 +88,24 @@ public class Player {
 
         for (int i = 0; i < GameController.NUMCOMBOS; i++) {
             Combo combo = game.getComboByIndex(i);
-            Family family = game.getFamilyByIndex(i);
-
             if (combo.matchCards(earnedCards))
                 score += combo.getScore();
-            if (family.matchCards(earnedCards))
-                score += 50;
-            
-            /*if (combo.matchCards(earnedCards))
-                cardpak = combo.getCombo(earnedCards);*/
         }
 
         return score;
     }
 
+    public ArrayList<Integer> getCombos(){
+        ArrayList<Integer> combos = new ArrayList<>();
+        for (int i = 0; i < GameController.NUMCOMBOS; i++) {
+            Combo combo = game.getComboByIndex(i);
+            if (combo.matchCards(earnedCards))
+                combos.add(i,1);
+            else
+                combos.add(i,0);
+        }
+        return combos;
+    }
 
     public void move(Table table, Player otherPlayer) {
          /*Action action = null;

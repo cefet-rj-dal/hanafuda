@@ -2,7 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.debug.ui.SCOPED_SAVE_SELECTION_DIALOG">
 		<item value="274" key="DIALOG_WIDTH"/>
-		<item value="337" key="DIALOG_HEIGHT"/>
 		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="337" key="DIALOG_HEIGHT"/>
+	</section>
+	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
+		<item value="270" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="436" key="DIALOG_HEIGHT"/>
+	</section>
+	<section name="org.eclipse.debug.ui.SINGLE_LAUNCH_CONFIGURATION_DIALOG_SECTION">
+		<item value="563" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="702" key="DIALOG_HEIGHT"/>
 	</section>
 </section>

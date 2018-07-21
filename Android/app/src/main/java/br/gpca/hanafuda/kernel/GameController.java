@@ -35,23 +35,36 @@ public class GameController {
                     50, 0, 10, 0, // 44-47 Dec
             };
 
-    private static final String[][] combos = new String[][]
+    private static final String[][] _combos = new String[][]
             {
                     // {Nome, pontuacao, numero minimo de cartas, cartas do combo[...], terminador}
                     {"Matsu-Kiri-Bozu", "150", "3", "0", "28", "44", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
-                    {"Oozan", "100", "3", "0", "4", "8", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
-                    {"Aotan", "200", "3", "22", "34", "38", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
-                    {"Acata", "200", "3", "14", "18", "26", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Oozan", "150", "3", "0", "4", "8", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Aotan", "100", "3", "22", "34", "38", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Acata", "100", "3", "14", "18", "26", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
                     {"Cosan", "150", "3", "2", "6", "10", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
                     {"Ino-Shika-Cho", "300", "3", "24", "36", "20", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
                     {"Tepo", "100", "3", "8", "28", "32", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
-                    {"Nizoro", "300", "4", "40", "41", "42", "43", "-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Nizoro", "200", "4", "40", "41", "42", "43", "-1", "-1", "-1", "-1", "-1", "-1"},
                     {"Hanami I-Pai", "100", "2", "8", "32", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
                     {"Tsukimi I-Pai", "100", "2", "28", "32", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Fam-Matsu", "50", "4", "0", "1", "2", "3","-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Fam-Uma", "50", "4", "4", "5", "6", "7","-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Fam-Sakura", "50", "4", "8", "9", "10", "11","-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Fam-Fuji", "50", "4", "12", "13", "14", "15","-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Fam-Susuki", "50", "4", "28", "29", "30", "31","-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Fam-Momiji", "50", "4", "36", "37", "38", "39","-1", "-1", "-1", "-1", "-1", "-1"},
+                    {"Fam-Kiri", "50", "4", "44", "45", "46", "47","-1", "-1", "-1", "-1", "-1", "-1"},
                     {"Nanata", "600", "7", "2", "6", "10", "14", "18", "22", "26", "34", "38", "42"},
                     {"Shiko", "600", "4", "0", "8", "28", "44", "-1", "-1", "-1", "-1", "-1", "-1"},
             };
-    public static final int NUMCOMBOS = combos.length;
+    public static final int NUMCOMBOS = _combos.length;
+
+    public static String getComboName(int i) {
+        if ((i >= 0) && (i < _combos.length))
+            return _combos[i][0];
+        return "";
+    }
 
     private static final String[] familyNames = new String[]
             {
@@ -159,12 +172,12 @@ public class GameController {
             Combo combo = new Combo();
 
             combo.setID(i);
-            combo.setName(combos[i][0]);
-            combo.setScore(Integer.parseInt(combos[i][1]));
-            combo.setMinNumCards(Integer.parseInt(combos[i][2]));
+            combo.setName(_combos[i][0]);
+            combo.setScore(Integer.parseInt(_combos[i][1]));
+            combo.setMinNumCards(Integer.parseInt(_combos[i][2]));
 
-            for (int j = 3; (j < 13) && (combos[i][j] != "-1"); j++)
-                combo.addCard(cardpack.getCardByIndex(Integer.parseInt((combos[i][j]))));
+            for (int j = 3; (j < 13) && (_combos[i][j] != "-1"); j++)
+                combo.addCard(cardpack.getCardByIndex(Integer.parseInt((_combos[i][j]))));
             comboPack.add(combo);
         }
     }

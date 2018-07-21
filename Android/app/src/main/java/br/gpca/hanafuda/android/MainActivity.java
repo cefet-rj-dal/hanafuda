@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import br.gpca.hanafuda.kernel.Action;
 import br.gpca.hanafuda.kernel.Card;
@@ -164,6 +165,10 @@ public class MainActivity extends Activity {
     private TextView scorecomputer;
     private ImageView image;
     private Toast toast;
+
+    //List para envio das combos
+    private ArrayList<Integer> playerCombos;
+    private ArrayList<Integer> computerCombos;
 
     private boolean clickOn = false;
     private boolean cardPlayerOn = false;
@@ -763,6 +768,8 @@ public class MainActivity extends Activity {
         int ran = getImageOpp();
         sp = new Integer(human.getScore()).toString();
         sc = new Integer(computer.getScore()).toString();
+        playerCombos = human.getCombos();
+        computerCombos = computer.getCombos();
 
         final Intent intent = new Intent(this, ShowWinner.class);
         Bundle params = new Bundle();
@@ -770,6 +777,8 @@ public class MainActivity extends Activity {
         params.putString("scorec", sc);
         params.putString("winner", winner);
         params.putInt("randomImageSW", ran);
+        params.putIntegerArrayList("pcombos", playerCombos);
+        params.putIntegerArrayList("ccombos", computerCombos);
         intent.putExtras(params);
 
         h.postDelayed(new Runnable() {

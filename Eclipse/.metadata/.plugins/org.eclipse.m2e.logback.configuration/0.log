@@ -1,0 +1,181 @@
+2017-12-06 16:42:11,785 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-12-06 16:42:27,151 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: dsws:dsws:0.0.1-SNAPSHOT @ C:\Users\eduar\Dropbox\Git\gmaia\dsws\Eclipse\dsws\pom.xml.
+2017-12-06 16:42:32,062 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-06 16:42:32,139 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-06 16:42:32,139 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-06 16:42:32,186 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\Dropbox\Git\gmaia\dsws\Eclipse\dsws\src\test\resources
+2017-12-06 16:42:35,897 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-06 16:42:35,913 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-06 16:42:35,913 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-06 16:42:35,960 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\Dropbox\Git\gmaia\dsws\Eclipse\dsws\src\test\resources
+2017-12-07 17:19:24,191 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-12-07 17:19:38,116 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-07 17:19:38,137 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-12-07 17:19:38,141 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-07 17:19:38,158 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\Dropbox\Git\gmaia\dsws\Eclipse\dsws\src\test\resources
+2018-01-08 17:46:37,120 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-01-08 17:46:47,745 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-01-08 17:46:47,769 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-01-08 17:46:47,773 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-01-08 17:46:47,779 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\Dropbox\Git\gmaia\dsws\Eclipse\dsws\src\test\resources
+2018-07-20 09:34:01,962 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-07-20 09:34:05,556 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: dsws:dsws:0.0.1-SNAPSHOT @ C:\Users\eduar\OneDrive\Git\dsws\Eclipse\dsws\pom.xml.
+2018-07-20 09:34:07,864 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 09:34:07,893 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 09:34:07,907 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 09:34:07,909 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\OneDrive\Git\dsws\Eclipse\dsws\src\test\resources
+2018-07-20 09:34:07,929 [Worker-0] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of dsws
+2018-07-20 09:34:07,930 [Worker-0] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for dsws
+2018-07-20 09:34:07,934 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2018-07-20 09:34:07,940 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 09:34:18,290 [Worker-0] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for dsws
+2018-07-20 09:34:18,516 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 09:34:18,517 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 09:34:18,518 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 09:34:18,519 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\OneDrive\Git\dsws\Eclipse\dsws\src\test\resources
+2018-07-20 09:34:18,520 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of dsws
+2018-07-20 09:34:18,520 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for dsws
+2018-07-20 09:34:18,527 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 09:35:01,911 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 09:35:01,925 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 09:35:01,927 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 09:35:01,928 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\OneDrive\Git\dsws\Eclipse\dsws\src\test\resources
+2018-07-20 09:35:17,870 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 09:35:17,873 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 09:35:17,875 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 09:35:17,875 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\OneDrive\Git\dsws\Eclipse\dsws\src\test\resources
+2018-07-20 17:55:04,603 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-07-20 18:01:20,504 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-07-20 18:01:35,277 [Worker-4] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for dsws
+2018-07-20 18:01:36,057 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:01:36,064 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:01:36,067 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:01:36,068 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:01:36,070 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of dsws
+2018-07-20 18:01:36,070 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for dsws
+2018-07-20 18:01:36,089 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:01:38,232 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:01:38,236 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:01:38,238 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:01:38,239 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:02:26,647 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:02:26,654 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:02:26,656 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:02:26,657 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:03:22,170 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:03:22,174 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:03:22,175 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:03:22,176 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:03:46,492 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:03:46,496 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:03:46,498 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:03:46,500 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:04:43,393 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:04:43,398 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:04:43,399 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:04:43,401 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:04:48,450 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:04:48,454 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:04:48,455 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:04:48,457 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:05:09,572 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:05:09,575 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:05:09,577 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:05:09,578 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:05:28,482 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:05:28,484 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:05:28,485 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:05:28,487 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:05:48,745 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:05:48,747 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:05:48,747 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:05:48,749 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:06:17,855 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:06:17,859 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:06:17,864 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:06:17,865 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:06:54,139 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:06:54,142 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:06:54,143 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:06:54,144 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:06:58,697 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:06:58,700 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:06:58,701 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:06:58,702 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:16:50,224 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:16:50,227 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:16:50,228 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:16:50,230 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:17:01,172 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:17:01,182 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:17:01,187 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:17:01,192 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:28:28,449 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:28:28,451 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:28:28,454 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:28:28,457 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:43:33,751 [Worker-20] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-07-20 18:43:34,171 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: dsws:dsws:0.0.1-SNAPSHOT @ C:\Users\eduar\eclipse.workspaces\dsws\pom.xml.
+2018-07-20 18:43:34,344 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dsws/src
+2018-07-20 18:43:34,345 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /dsws/src overlaps with sources folder /dsws/src
+2018-07-20 18:43:34,346 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /dsws/src/test/java because it overlaps with /dsws/src
+2018-07-20 18:43:34,625 [Worker-20] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for dsws
+2018-07-20 18:43:34,641 [Worker-20] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2018-07-20 18:43:34,844 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:43:34,848 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 18:43:34,849 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 18:43:34,850 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 18:43:34,851 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of dsws
+2018-07-20 18:43:34,851 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for dsws
+2018-07-20 18:43:34,862 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:12:32,682 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-07-20 20:12:53,443 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for dsws
+2018-07-20 20:12:54,823 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:12:54,830 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 20:12:54,832 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:12:54,833 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 20:12:54,863 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of dsws
+2018-07-20 20:12:54,864 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for dsws
+2018-07-20 20:12:54,885 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:14:22,491 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: dsws:dsws:0.0.1-SNAPSHOT @ C:\Users\eduar\eclipse.workspaces\dsws\pom.xml.
+2018-07-20 20:14:23,283 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:14:23,286 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 20:14:23,288 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:14:23,290 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 20:14:23,290 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of dsws
+2018-07-20 20:14:23,290 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for dsws
+2018-07-20 20:14:23,294 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:14:24,503 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:14:24,508 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 20:14:24,509 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:14:24,511 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 20:16:44,570 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2018-07-20 20:16:50,864 [Worker-1] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\eduar\eclipse.workspaces\dsws
+2018-07-20 20:16:50,865 [Worker-1] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install
+2018-07-20 20:19:25,008 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:19:25,010 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 20:19:25,011 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:19:25,013 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 20:20:40,409 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:20:40,412 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 20:20:40,413 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:20:40,415 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 20:20:40,415 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of dsws
+2018-07-20 20:20:40,415 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for dsws
+2018-07-20 20:20:40,425 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:26:39,967 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for dsws
+2018-07-20 20:26:40,149 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:26:40,151 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 20:26:40,152 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:26:40,153 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 20:26:40,154 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of dsws
+2018-07-20 20:26:40,154 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for dsws
+2018-07-20 20:26:40,158 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:27:13,593 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:27:13,595 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 20:27:13,597 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:27:13,598 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources
+2018-07-20 20:39:01,005 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:39:01,007 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-20 20:39:01,010 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-07-20 20:39:01,011 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\eduar\eclipse.workspaces\dsws\src\test\resources

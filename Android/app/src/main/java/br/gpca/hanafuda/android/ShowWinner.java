@@ -14,10 +14,14 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 
+import java.io.InputStream;
 import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-import br.gpca.survey.Survey;
-import br.gpca.survey.SurveyAndroid;
+import br.gpca.game.GameData;
+import br.gpca.game.GameDataAndroid;
+import br.gpca.hanafuda.kernel.GameController;
 
 
 /*
@@ -38,24 +42,38 @@ public class ShowWinner extends Activity {
         TextView scoreplayer = (TextView) findViewById(R.id.scplay);
         TextView winner = (TextView) findViewById(R.id.winner);
         ImageView image = (ImageView) findViewById(R.id.AIandroid);
-
+        TextView position = (TextView) findViewById(R.id.position);
 
         Intent it = getIntent();
         if (it != null) {
             Bundle params = it.getExtras();
             if (params != null) {
-                String sc = params.getString("scorec");
-                scorecomputer.setText(sc);
+                String playerPoints = params.getString("scorep");
+                scoreplayer.setText(playerPoints);
 
-                String sp = params.getString("scorep");
-                scoreplayer.setText(sp);
+                String computerPoints = params.getString("scorec");
+                scorecomputer.setText(computerPoints);
+
 
                 String vencedor = params.getString("winner");
                 winner.setText(vencedor);
 
+                ArrayList playerCombos = params.getIntegerArrayList("pcombos");
+                ArrayList computerCombos = params.getIntegerArrayList("ccombos");
 
+                String pos = sendResults(Integer.parseInt(playerPoints), playerCombos, MainActivity.oppType.toString(), Integer.parseInt(computerPoints), computerCombos);
+                String txt;
+                if(pos.equals("1")){
+                    txt = "You are the "+ pos +"st in the ranking!";
+                }else if(pos.equals("2")){
+                    txt = "You are the "+ pos +"nd in the ranking!";
+                }else if(pos.equals("3")){
+                    txt = "You are the "+ pos +"rd in the ranking!";
+                }else{
+                    txt = "You are the "+ pos +"th in the ranking!";
+                }
 
-                sendResults(sc, sp, MainActivity.oppType.toString());
+                position.setText(txt);
 
                 int randomImageSW = params.getInt("randomImageSW");
 
@@ -81,30 +99,43 @@ public class ShowWinner extends Activity {
         }
     }
 
+    protected String getCombo(ArrayList combos) {
+        String cmb = "";
+        for(int i = 0; i< combos.size();i++){
+            String s = combos.get(i).toString();
+            if (Integer.parseInt(s) > 0) {
+                if (cmb.length() > 0) {
+                    cmb = cmb + ",";
+                }
+                cmb = cmb + GameController.getComboName(i);
+            }
+        }
+        return cmb;
+    }
 
-
-
-    protected void sendResults(String sc, String sp, String player) {
-        Survey survey = SurveyAndroid.createSurvey(this);
-        String strkey = ""+ key++;
-        survey.addItem(strkey, "Player_Points", sp);
-        survey.addItem(strkey, "Computer_Points", sc);
-        survey.addItem(strkey, "Computer_Algorithm", player);
-        String json = Survey.convert(survey);
+    protected String sendResults(int playerPoints, ArrayList playerCombos, String computerAlgorithm, int computerPoints, ArrayList computerCombos) {
+        GameData gameData = GameDataAndroid.createSurvey(this);
+        gameData.playerPoints = playerPoints;
+        gameData.playerCombos = getCombo(playerCombos);
+        gameData.computerAlgorithm = computerAlgorithm;
+        gameData.computerPoints = computerPoints;
+        gameData.computerCombos = getCombo(computerCombos);
+        String json = GameData.convert(gameData);
         try {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
 
             CloseableHttpClient httpclient = HttpClients.createDefault();
-
-            String url = "http://eic.cefet-rj.br/app/dsws/survey.spring?json=" + URLEncoder.encode(json);
+            String url = "http://aldebaran.eic.cefet-rj.br:8080/amews/survey.spring?json=" + URLEncoder.encode(json);
             HttpGet httpGet = new HttpGet(url);
-            CloseableHttpResponse response1 = httpclient.execute(httpGet);
-            String value = "" + response1.getStatusLine();
-
+            CloseableHttpResponse response = httpclient.execute(httpGet);
+            InputStream content = response.getEntity().getContent();
+            String value = new Scanner(content, "UTF-8").useDelimiter("\\A").next();
+            return value;
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return "";
     }
 
     public void continueGame(View view) {

@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="71" key="DIALOG_Y_ORIGIN"/>
-		<item value="418" key="DIALOG_X_ORIGIN"/>
+		<item value="61" key="DIALOG_Y_ORIGIN"/>
+		<item value="411" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
+		<item value="true" key="actionSetFilter"/>
+		<item value="true" key="uncategorizedFilter"/>
+		<item value="true" key="internalFilter"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="563" key="dialogHeight"/>
+		<item value="900" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="1279" key="DIALOG_WIDTH"/>
+		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="742" key="DIALOG_HEIGHT"/>
+		<item value="-176" key="DIALOG_Y_ORIGIN"/>
+		<item value="-280" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.jst.servlet.ui.internal.wizard.WebComponentExportWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
 	</section>
 </section>

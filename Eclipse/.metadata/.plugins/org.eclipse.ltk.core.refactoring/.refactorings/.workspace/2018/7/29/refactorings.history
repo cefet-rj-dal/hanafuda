@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;dswsclient&apos;" deleteContents="true" description="Delete resource &apos;dswsclient&apos;" element1="/dswsclient" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1532120511923"/>
+</session>
