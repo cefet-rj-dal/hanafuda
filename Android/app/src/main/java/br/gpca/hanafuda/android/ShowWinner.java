@@ -126,7 +126,7 @@ public class ShowWinner extends Activity {
             StrictMode.setThreadPolicy(policy);
 
             CloseableHttpClient httpclient = HttpClients.createDefault();
-            String url = "http://aldebaran.eic.cefet-rj.br:8080/amews/survey.spring?json=" + URLEncoder.encode(json);
+            String url = "http://eic.cefet-rj.br/amews/survey.spring?json=" + URLEncoder.encode(json);
             HttpGet httpGet = new HttpGet(url);
             CloseableHttpResponse response = httpclient.execute(httpGet);
             InputStream content = response.getEntity().getContent();
