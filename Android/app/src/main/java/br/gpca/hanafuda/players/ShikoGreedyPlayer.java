@@ -19,13 +19,16 @@ public class ShikoGreedyPlayer extends Player {
 
         Card bestHandCard = null, bestTableCard = null;
 
-        boolean handMatched = false, deckMatched = false;
+        boolean handMatched = false, deckMatched = false, thereIsAShikoPossibility = false, isFamilyCard = false;
         int bestScore = -1, handSize = hand.getCardsSize(), tableSize = table.getCardsSize();
 
-        for (int i = 0; i < handSize; i++) {
-            Card handCard = hand.getCardByIndex(i);
-            for (int j = 0; j < tableSize; j++) {
-                Card tableCard = table.getCardByIndex(j);
+        for (int i = 0; i < handSize; i++) { // para carta na mão
+            Card handCard = hand.getCardByIndex(i); // get carta da mao
+            System.out.print("familia: "+handCard.getFamily());
+            System.out.print("id: "+handCard.getID());
+            System.out.print("ken: "+handCard.getKen());
+            for (int j = 0; j < tableSize; j++) { // para cada carta na mesa
+                Card tableCard = table.getCardByIndex(j); // get carta da mesa
 
                 if (game.canMatch(handCard, tableCard)) // se combinar,
                 {
@@ -38,11 +41,38 @@ public class ShikoGreedyPlayer extends Player {
                     if (tempScore >= GameController.MAX_GAME_SCORE) // se acabar o jogo,
                         return; // essa � a melhor combina��o, terminar a jogada
 
-                    if (tempScore > bestScore) // se for a melhor combina��o at� agora
+                    if(Card.isAShikoPossibility(handCard) || Card.isAShikoPossibility(tableCard)){
+
+                        if(!(Card.isTheBogeyman(handCard))){
+                            isFamilyCard = true;
+                        } else {
+                            isFamilyCard = false;
+                        }
+
+                        if(thereIsAShikoPossibility && isFamilyCard) {
+                            if(tempScore > bestScore) {
+                                bestHandCard = handCard;
+                                bestTableCard = tableCard;
+                                bestScore = tempScore;
+                            } else if(Card.isTheBogeyman(bestHandCard)){
+                                bestHandCard = handCard;
+                                bestTableCard = tableCard;
+                                bestScore = tempScore;
+                            }
+                        } else if(!thereIsAShikoPossibility){
+                            bestHandCard = handCard;
+                            bestTableCard = tableCard;
+                            bestScore = tempScore;
+                        }
+                        thereIsAShikoPossibility = true;
+                    } else if (tempScore > bestScore && !thereIsAShikoPossibility) // se for a melhor combina��o at� agora
                     {
                         bestHandCard = handCard; // salvar carta da m�o
+                        System.out.println("Melhor carta da mao: "+bestHandCard);
                         bestTableCard = tableCard; // salvar carta da mesa
+                        System.out.println("Melhor carta da mesa: "+bestTableCard);
                         bestScore = tempScore; // salvar melhor pontua��o
+                        System.out.println("Melhor pontuação: "+bestScore);
                     }
 
                     // desfazer a jogada
@@ -92,6 +122,8 @@ public class ShikoGreedyPlayer extends Player {
 
         bestScore = -1;
         bestTableCard = null;
+        thereIsAShikoPossibility = false;
+        isFamilyCard = false;
 
         // parte 2 - comprar do monte e combinar com uma carta da mesa.
         Card deckCard = null;
@@ -118,10 +150,21 @@ public class ShikoGreedyPlayer extends Player {
                 tempScore = getScore();
                 if (tempScore > GameController.MAX_GAME_SCORE) return;
 
-                if (tempScore > bestScore) {
+                if(Card.isAShikoPossibility(deckCard) || Card.isAShikoPossibility(tableCard)){
+                    if(tempScore > bestScore && thereIsAShikoPossibility) {
+                        bestTableCard = tableCard;
+                        bestScore = tempScore;
+                    } else if(!thereIsAShikoPossibility){
+                        bestTableCard = tableCard;
+                        bestScore = tempScore;
+                    }
+                    thereIsAShikoPossibility = true;
+                } else if (tempScore > bestScore && !thereIsAShikoPossibility){
                     bestTableCard = tableCard;
                     bestScore = tempScore;
                 }
+
+
 
                 // desfazer a jogada
 

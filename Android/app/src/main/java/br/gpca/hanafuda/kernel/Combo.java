@@ -51,18 +51,4 @@ public class Combo extends CardPack {
         return false;
     }
 
-    public CardPack getCombo(CardPack cards) {
-        //se combo estiver vazio nao houve combo
-        //Se matchCards for verdadeiro, chamar o getCombo.
-
-        int cardSize = cards.getCardsSize();
-        CardPack combo = new CardPack();
-
-        for (int i = 0; i < cardSize; i++)
-            if (isCardPresent(cards.getCardByIndex(i))) combo.addCard(cards.getCardByIndex(i));
-        if (GameController.NUMCARDS_TOTAL >= minNumCards)
-            return combo;
-        combo.clear();
-        return combo;
-    }
 }

@@ -14,17 +14,10 @@ public class Constants {
         Human,
         Greedy,
         RandomPlayer,
-        ExpectiMinimaxPlayer;
-    }
-
-
-    //Interface em jogo
-    public enum GameStates {
-        NotDefined,
-        MatchHandTable,
-        MatchDeckTable,
-        LeaveOnTable,
-        BuyFromDeck,
+        ExpectiMinimaxPlayer,
+        ShikoGreedyPlayer,
+        NanatanGreedyPlayer,
+        ShikoNanatanGreedyPlayer;
     }
 
 

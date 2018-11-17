@@ -729,15 +729,15 @@ public class MainActivity extends Activity {
                 setImageOpp(2);
                 break;
             case 3:
-                setOpponent(Constants.PlayerTypes.RandomPlayer);
+                setOpponent(Constants.PlayerTypes.ShikoGreedyPlayer);
                 setImageOpp(3);
                 break;
             case 4:
-                setOpponent(Constants.PlayerTypes.Greedy);
+                setOpponent(Constants.PlayerTypes.NanatanGreedyPlayer);
                 setImageOpp(4);
                 break;
             case 5:
-                setOpponent(Constants.PlayerTypes.ExpectiMinimaxPlayer);
+                setOpponent(Constants.PlayerTypes.ShikoNanatanGreedyPlayer);
                 setImageOpp(5);
                 break;
 

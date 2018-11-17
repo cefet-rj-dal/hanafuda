@@ -24,13 +24,6 @@ public class Enums {
 
     }
 
-    public enum PlayerTypes {
-        Human,
-        Greedy,
-        SmartGreedy,
-        Advanced;
-    }
-
     public enum NodeType {
         Max,
         Min,

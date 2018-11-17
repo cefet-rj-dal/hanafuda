@@ -7,6 +7,9 @@ import br.gpca.hanafuda.kernel.Enums.GameStates;
 import br.gpca.hanafuda.players.ExpectiMinimaxPlayer;
 import br.gpca.hanafuda.players.GreedyPlayer;
 import br.gpca.hanafuda.players.RandomPlayer;
+import br.gpca.hanafuda.players.ShikoGreedyPlayer;
+import br.gpca.hanafuda.players.NanatanGreedyPlayer;
+import br.gpca.hanafuda.players.ShikoNanatanGreedyPlayer;
 
 
 public class GameController {
@@ -202,6 +205,10 @@ public class GameController {
                 player[0].type = playerType1;
                 player[0].game = this;
                 player[0].name = "Player";
+                System.out.println("\nID: "+player[0].ID);
+                System.out.println("type: "+player[0].type);
+                System.out.println("game: "+player[0].game);
+                System.out.println("name: "+player[0].name);
                 break;
         }
 
@@ -212,6 +219,10 @@ public class GameController {
                 player[1].type = playerType2;
                 player[1].game = this;
                 player[1].name = "Greedy";
+                System.out.println("\nID: "+player[1].ID);
+                System.out.println("type: "+player[1].type);
+                System.out.println("game: "+player[1].game);
+                System.out.println("name: "+player[1].name);
                 break;
             case RandomPlayer:
                 player[1] = new RandomPlayer(this);
@@ -219,6 +230,10 @@ public class GameController {
                 player[1].type = playerType2;
                 player[1].game = this;
                 player[1].name = "Random";
+                System.out.println("\nID: "+player[1].ID);
+                System.out.println("type: "+player[1].type);
+                System.out.println("game: "+player[1].game);
+                System.out.println("name: "+player[1].name);
                 break;
             case ExpectiMinimaxPlayer:
                 player[1] = new ExpectiMinimaxPlayer(this);
@@ -226,6 +241,44 @@ public class GameController {
                 player[1].type = playerType2;
                 player[1].game = this;
                 player[1].name = "Expecti-Minimax";
+                System.out.println("\nID: "+player[1].ID);
+                System.out.println("type: "+player[1].type);
+                System.out.println("game: "+player[1].game);
+                System.out.println("name: "+player[1].name);
+                break;
+            case ShikoGreedyPlayer:
+                player[1] = new ShikoGreedyPlayer(this);
+                player[1].ID = 1;
+                player[1].type = playerType2;
+                player[1].game = this;
+                player[1].name = "Shiko-Greedy";
+                System.out.println("\nID: "+player[1].ID);
+                System.out.println("type: "+player[1].type);
+                System.out.println("game: "+player[1].game);
+                System.out.println("name: "+player[1].name);
+                break;
+            case NanatanGreedyPlayer:
+                player[1] = new NanatanGreedyPlayer(this);
+                player[1].ID = 1;
+                player[1].type = playerType2;
+                player[1].game = this;
+                player[1].name = "Nanatan-Greedy";
+                System.out.println("\nID: "+player[1].ID);
+                System.out.println("type: "+player[1].type);
+                System.out.println("game: "+player[1].game);
+                System.out.println("name: "+player[1].name);
+                break;
+
+            case ShikoNanatanGreedyPlayer:
+                player[1] = new ShikoNanatanGreedyPlayer(this);
+                player[1].ID = 1;
+                player[1].type = playerType2;
+                player[1].game = this;
+                player[1].name = "Shiko-Nanatan-Greedy";
+                System.out.println("\nID: "+player[1].ID);
+                System.out.println("type: "+player[1].type);
+                System.out.println("game: "+player[1].game);
+                System.out.println("name: "+player[1].name);
                 break;
         }
     }
@@ -290,10 +343,6 @@ public class GameController {
         return comboPack.get(index);
     }
 
-    public Family getFamilyByIndex(int index) {
-        return familyPack.get(index);
-    }
-
     private void dealCards(Player player1, Player player2) {
         deck.transferCardsTo(player1.hand, Hand.NUMCARDS);
         deck.transferCardsTo(player2.hand, Hand.NUMCARDS);
@@ -347,19 +396,6 @@ public class GameController {
         }
         return false;
     }
-
-    public void reset() {
-        for (int i = 0; i < 2; i++) {
-            player[i].hand.clear();
-            player[i].earnedCards.clear();
-        }
-
-        table.clear();
-        deck.clear();
-        oya = -1;
-        currentPlayer = null;//-1
-    }
-
 
     public ErrorList matchHandTable(Card handCard, Card tableCard) {
         if (handCard == null && tableCard == null)

@@ -29,5 +29,32 @@ public class Card {
         this.ken = ken;
     }
 
+    public static boolean isAShikoPossibility(Card card){
+
+        if(card.getID() == 0 || card.getID() == 8 || card.getID() == 28 || card.getID() == 44){
+            return true;
+        }
+
+        return false;
+    }
+
+    public static boolean isANanatanPossibilty(Card card){
+
+        if(card.getID() == 2 || card.getID() == 6 || card.getID() == 10 || card.getID() == 14
+                || card.getID() == 18 || card.getID() == 22 || card.getID() == 26 || card.getID() == 34
+                || card.getID() == 38 || card.getID() == 42){
+            return true;
+        }
+
+        return false;
+    }
+
+    public static boolean isTheBogeyman(Card card){
+        if(card.getID() == 40){
+            return true;
+        }
+
+        return false;
+    }
 }
 

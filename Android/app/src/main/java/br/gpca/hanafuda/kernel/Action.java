@@ -37,9 +37,5 @@ public class Action {
 
     }
 
-    public br.gpca.hanafuda.kernel.Constants.ErrorList getErrorType() {
-        // TODO Auto-generated method stub
-        return null;
-    }
 
 }

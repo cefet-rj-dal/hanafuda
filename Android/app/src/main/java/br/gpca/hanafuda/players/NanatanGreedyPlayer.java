@@ -19,7 +19,7 @@ public class NanatanGreedyPlayer extends Player {
 
         Card bestHandCard = null, bestTableCard = null;
 
-        boolean handMatched = false, deckMatched = false;
+        boolean handMatched = false, deckMatched = false, thereIsANanatanPossibility = false, isFamilyCard = false;;
         int bestScore = -1, handSize = hand.getCardsSize(), tableSize = table.getCardsSize();
 
         for (int i = 0; i < handSize; i++) {
@@ -38,7 +38,32 @@ public class NanatanGreedyPlayer extends Player {
                     if (tempScore >= GameController.MAX_GAME_SCORE) // se acabar o jogo,
                         return; // essa � a melhor combina��o, terminar a jogada
 
-                    if (tempScore > bestScore) // se for a melhor combina��o at� agora
+
+                    if(Card.isANanatanPossibilty(handCard) || Card.isANanatanPossibilty(tableCard)) {
+
+                        if (!(Card.isTheBogeyman(handCard))) {
+                            isFamilyCard = true;
+                        } else {
+                            isFamilyCard = false;
+                        }
+
+                        if(thereIsANanatanPossibility && isFamilyCard) {
+                            if(tempScore > bestScore) {
+                                bestHandCard = handCard;
+                                bestTableCard = tableCard;
+                                bestScore = tempScore;
+                            } else if(Card.isTheBogeyman(bestHandCard)){
+                                bestHandCard = handCard;
+                                bestTableCard = tableCard;
+                                bestScore = tempScore;
+                            }
+                        } else if(!thereIsANanatanPossibility){
+                            bestHandCard = handCard;
+                            bestTableCard = tableCard;
+                            bestScore = tempScore;
+                        }
+                        thereIsANanatanPossibility = true;
+                    } else if (tempScore > bestScore && !thereIsANanatanPossibility) // se for a melhor combina��o at� agora
                     {
                         bestHandCard = handCard; // salvar carta da m�o
                         bestTableCard = tableCard; // salvar carta da mesa
@@ -92,6 +117,8 @@ public class NanatanGreedyPlayer extends Player {
 
         bestScore = -1;
         bestTableCard = null;
+        thereIsANanatanPossibility= false;
+        isFamilyCard = false;
 
         // parte 2 - comprar do monte e combinar com uma carta da mesa.
         Card deckCard = null;
@@ -118,7 +145,16 @@ public class NanatanGreedyPlayer extends Player {
                 tempScore = getScore();
                 if (tempScore > GameController.MAX_GAME_SCORE) return;
 
-                if (tempScore > bestScore) {
+                if(Card.isANanatanPossibilty(deckCard) || Card.isANanatanPossibilty(tableCard)){
+                    if(tempScore > bestScore && thereIsANanatanPossibility) {
+                        bestTableCard = tableCard;
+                        bestScore = tempScore;
+                    } else if(!thereIsANanatanPossibility){
+                        bestTableCard = tableCard;
+                        bestScore = tempScore;
+                    }
+                    thereIsANanatanPossibility = true;
+                } else if (tempScore > bestScore && !thereIsANanatanPossibility){
                     bestTableCard = tableCard;
                     bestScore = tempScore;
                 }
