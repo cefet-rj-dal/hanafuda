@@ -72,7 +72,8 @@ public class MainActivity extends Activity {
     public int currentImage = 0;
 
     public int[] images = {R.drawable.chibimaker1, R.drawable.chibimaker2, R.drawable.chibimaker3,
-            R.drawable.chibimaker4, R.drawable.chibimaker5, R.drawable.chibimaker6};
+            R.drawable.chibimaker4, R.drawable.chibimaker5, R.drawable.chibimaker6,
+            R.drawable.chibimaker7, R.drawable.chibimaker8, R.drawable.chibimaker9, R.drawable.chibimaker10};
 
 /*
 
@@ -710,6 +711,18 @@ public class MainActivity extends Activity {
             case 5:
                 image.setImageResource(R.drawable.chibieyes6);
                 break;
+            case 6:
+                image.setImageResource(R.drawable.chibieyes7);
+                break;
+            case 7:
+                image.setImageResource(R.drawable.chibieyes8);
+                break;
+            case 8:
+                image.setImageResource(R.drawable.chibieyes9);
+                break;
+            case 9:
+                image.setImageResource(R.drawable.chibieyes10);
+                break;
         }
     }
 
@@ -740,7 +753,22 @@ public class MainActivity extends Activity {
                 setOpponent(Constants.PlayerTypes.ShikoNanatanGreedyPlayer);
                 setImageOpp(5);
                 break;
-
+            case 6:
+                setOpponent(Constants.PlayerTypes.ShikoNanatanGreedyPlayer);
+                setImageOpp(6);
+                break;
+            case 7:
+                setOpponent(Constants.PlayerTypes.ShikoNanatanGreedyPlayer);
+                setImageOpp(7);
+                break;
+            case 8:
+                setOpponent(Constants.PlayerTypes.ShikoNanatanGreedyPlayer);
+                setImageOpp(8);
+                break;
+            case 9:
+                setOpponent(Constants.PlayerTypes.ShikoNanatanGreedyPlayer);
+                setImageOpp(9);
+                break;
         }
     }
 
