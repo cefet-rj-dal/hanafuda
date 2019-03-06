@@ -95,6 +95,18 @@ public class ShowWinner extends Activity {
                 if (randomImageSW == 5) {
                     image.setImageResource(R.drawable.chibimaker6);
                 }
+                if (randomImageSW == 6) {
+                    image.setImageResource(R.drawable.chibimaker7);
+                }
+                if (randomImageSW == 7) {
+                    image.setImageResource(R.drawable.chibimaker8);
+                }
+                if (randomImageSW == 8) {
+                    image.setImageResource(R.drawable.chibimaker9);
+                }
+                if (randomImageSW == 9) {
+                    image.setImageResource(R.drawable.chibimaker10);
+                }
             }
         }
     }
