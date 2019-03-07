@@ -60,14 +60,14 @@
         android:layout_alignParentEnd="true" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/imageView"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/chooseopponent"
         android:layout_above="@+id/imgopp"
+        android:layout_alignEnd="@+id/btnext"
         android:layout_alignRight="@+id/btnext"
-        android:layout_alignEnd="@+id/btnext" />
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/chooseopponent" />
 
 
 </RelativeLayout>
