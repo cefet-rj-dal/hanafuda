@@ -16,6 +16,7 @@ public class GameData {
     public int year;
     public int hour;
     public int minute;
+    public int playerStarted;
     public String playerName;
     public int playerPoints;
     public String playerCombos;

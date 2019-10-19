@@ -61,7 +61,7 @@ public class ShowWinner extends Activity {
                 ArrayList playerCombos = params.getIntegerArrayList("pcombos");
                 ArrayList computerCombos = params.getIntegerArrayList("ccombos");
 
-                String pos = sendResults(Integer.parseInt(playerPoints), playerCombos, MainActivity.oppType.toString(), Integer.parseInt(computerPoints), computerCombos);
+                String pos = sendResults(MainActivity.playerStarted, Integer.parseInt(playerPoints), playerCombos, MainActivity.oppType.toString(), Integer.parseInt(computerPoints), computerCombos);
                 String txt;
                 if(pos.equals("1")){
                     txt = "You are the "+ pos +"st in the ranking!";
@@ -125,8 +125,9 @@ public class ShowWinner extends Activity {
         return cmb;
     }
 
-    protected String sendResults(int playerPoints, ArrayList playerCombos, String computerAlgorithm, int computerPoints, ArrayList computerCombos) {
+    protected String sendResults(int playerStarted, int playerPoints, ArrayList playerCombos, String computerAlgorithm, int computerPoints, ArrayList computerCombos) {
         GameData gameData = GameDataAndroid.createSurvey(this);
+        gameData.playerStarted = playerStarted;
         gameData.playerPoints = playerPoints;
         gameData.playerCombos = getCombo(playerCombos);
         gameData.computerAlgorithm = computerAlgorithm;

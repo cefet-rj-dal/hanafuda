@@ -31,6 +31,8 @@ import br.gpca.hanafuda.kernel.GameController;
 import br.gpca.hanafuda.kernel.Player;
 
 public class MainActivity extends Activity {
+    public static int playerStarted;
+
     public int imageOpponent;
 
     public void setImageOpp(int random) {
@@ -386,8 +388,10 @@ public class MainActivity extends Activity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         if (game.currentPlayer.ID == auxC.ID) {
             text = this.getString(R.string.turncomputer);
+            playerStarted = 0;
         } else {
             text = this.getString(R.string.turnplayer);
+            playerStarted = 1;
         }
         builder.setMessage(text)
                 .setCancelable(false)
