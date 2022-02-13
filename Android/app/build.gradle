@@ -1,17 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 31
     android {
         useLibrary 'org.apache.http.legacy'
     }
     defaultConfig {
         applicationId "br.gpca.hanafuda.android"
         minSdkVersion 14
-        targetSdkVersion 26
-        versionCode 15
-        versionName '2.15.0'
+        targetSdkVersion 31
+        versionCode 19
+        versionName '2.19.0'
     }
     buildTypes {
         release {
@@ -21,6 +20,7 @@ android {
     }
     productFlavors {
     }
+    buildToolsVersion '31.0.0'
 }
 
 dependencies {

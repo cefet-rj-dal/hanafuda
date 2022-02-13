@@ -2,6 +2,7 @@ package br.gpca.hanafuda.android;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +21,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
+
+//import android.util.Log;
 
 import br.gpca.hanafuda.kernel.Action;
 import br.gpca.hanafuda.kernel.Card;
@@ -186,8 +188,11 @@ public class MainActivity extends Activity {
         Game Screen
 
 */
+
     public void start(Constants.PlayerTypes type, final boolean advancedMode) {
         game.newGame(Constants.PlayerTypes.Human, type);
+
+    //    Log.v("Test", getDeviceID());
 
         Player human = game.player[0];
         final Player auxP = human;

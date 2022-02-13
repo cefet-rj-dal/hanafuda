@@ -8,13 +8,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:background="#009688">
 
         <ImageView
             android:id="@+id/androidAI"
             android:layout_width="50dp"
-            android:layout_height="25dp"/>
-        
+            android:layout_height="25dp" />
+
         <TextView
             android:id="@+id/TextView02"
             android:layout_width="wrap_content"
@@ -207,6 +208,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#009688">
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/score"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/scoreplayer"
+            android:layout_width="69dp"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>		
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical" >
 
         <LinearLayout
@@ -314,27 +337,6 @@
 
             </GridView>
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/TextView01"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:text="@string/score"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/scoreplayer"
-            android:layout_width="69dp"
-            android:layout_height="25dp"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
 
     </LinearLayout>
 
