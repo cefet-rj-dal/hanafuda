@@ -9,8 +9,8 @@ android {
         applicationId "br.gpca.hanafuda.android"
         minSdkVersion 14
         targetSdkVersion 31
-        versionCode 19
-        versionName '2.19.0'
+        versionCode 20
+        versionName '2.20.0'
     }
     buildTypes {
         release {

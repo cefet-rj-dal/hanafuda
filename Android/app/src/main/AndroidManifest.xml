@@ -25,5 +25,6 @@
             </intent-filter>
         </activity>
         <activity android:name="ShowWinner" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
     </application>
 </manifest>
