@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0.10" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
-    <list key="modules" value0="amews::org.eclipse.jst.jee.server:amews::jst.web::3.0"/>
-  </server>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="apache-tomcat-9.0.55" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
-    <list key="modules" value0="amews::org.eclipse.jst.jee.server:amews::jst.web::3.0"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/apache-tomcat-9.0.86 at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="apache-tomcat-9.0.86 at localhost" name="apache-tomcat-9.0.86 at localhost" runtime-id="apache-tomcat-9.0.86" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="6">
+    <list key="modules" value0="amews::org.eclipse.jst.jee.server:amews::jst.web::4.0"/>
   </server>
 </servers>
