@@ -21,6 +21,7 @@ android {
     productFlavors {
     }
     buildToolsVersion '31.0.0'
+    namespace 'br.gpca.hanafuda.android'
 }
 
 dependencies {
