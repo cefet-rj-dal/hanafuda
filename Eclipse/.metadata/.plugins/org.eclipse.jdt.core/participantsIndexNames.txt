@@ -1,9 +1,3 @@
 INDEX VERSION 1.134
-C:\Java\Eclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1827532901.index
+C:\Java\hanafuda\Eclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1827532901.index
 \amews\src\main\java
-C:\Java\Eclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2113244799.index
-\amews2\src\main\java
-C:\Java\Eclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\709115835.index
-\amews\src\main\java
-C:\Java\Eclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4199761212.index
-\amews3\src\main\java
