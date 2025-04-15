@@ -1,6 +1,5 @@
-INDEX VERSION 1.4+C:\Java\hanafuda\Eclipse\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3439911371.index
-1063322777.index
-3878272563.index
-4113236890.index
-3982901429.index
+INDEX VERSION 1.4+C:\Git\dal\hanafuda\Eclipse\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4276801200.index
+3704585941.index
+3643522277.index
+2702791997.index
