@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
-		<item value="200" key="SashWeightDetails"/>
-		<item value="200" key="SashWeightTree"/>
-		<item value="156" key="HEIGHT"/>
-		<item value="600" key="WIDTH"/>
+	<item key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth0" value="173"/>
+	<item key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1" value="617"/>
+	<item key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth2" value="82"/>
+	<item key="org.eclipse.jdt.debug.ui.jre_preference_page_context.sortColumn" value="1"/>
+	<section name="expressionHistory">
 	</section>
 </section>
